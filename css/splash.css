@@ -1,0 +1,159 @@
+body {
+	background: #0a0300;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#page {
+	margin: 0 auto;
+	position: relative;
+}
+
+#region_selector {
+	position: absolute;
+	z-index: 2;
+	width: 250px;
+}
+
+	#region_selector h2 {
+		color: #ce621f;
+		text-transform: uppercase;
+		line-height: 1;
+		padding: 10px 0;
+		margin: 10px 0;
+		border-top: 1px solid #fffbfa;
+		border-bottom: 1px solid #fffbfa;
+		font-family: 'Dosis', sans-serif;
+		font-weight: normal;
+		font-size: 18px;
+		letter-spacing: 2px;
+	}
+
+	#region_selector .regions {
+		margin: 10px 0;
+		border-bottom: 1px solid #fffbfa;
+	}
+
+		#region_selector .regions dl dt {
+			text-transform: uppercase;
+			line-height: 1;
+			font-family: 'Dosis', sans-serif;
+			font-size: 18px;
+			letter-spacing: 2px;
+			display: inline;
+			margin: 0 15px 0 0;
+			padding: 0;
+		}
+
+			#region_selector .regions dl dt a {
+				color: #fff;
+				text-decoration: none
+			}
+
+		#region_selector .regions dl dd {
+			text-transform: uppercase;
+			line-height: 1;
+			font-family: 'Dosis', sans-serif;
+			font-size: 18px;
+			letter-spacing: 2px;
+			display: inline;
+			margin: 0;
+			padding: 0;
+		}
+
+			#region_selector .regions dl dd a {
+				color: #9c9b9b;
+				text-decoration: none
+			}
+
+#splash_graphic {
+	top: 0;
+	z-index: 1;
+	position: absolute;
+}
+
+	#splash_graphic img {
+		width: 100%;
+	}
+
+/* breakpoints */
+@media screen {
+  
+	#splash_graphic {
+		display: none;
+	}
+
+	#region_selector {
+		top: 20px;
+		position: relative;
+		margin: 0 auto;
+		left: 0px;
+	}
+
+}
+
+@media screen and (min-width: 583px) {
+
+	#page {
+		width: 100%;
+		background: #fcf !important;
+	}
+
+	#splash_graphic {
+		right: -275px;
+		width: 900px;
+		display: block;
+	}
+
+	#region_selector {
+		top: 150px;
+		position: absolute;
+		margin: 0;
+		left: 20px;
+	}
+
+}
+
+@media screen and (min-width: 670px) {
+
+	#page {
+		width: 100%;
+		background: #fcf !important;
+	}
+
+	#splash_graphic {
+		right: -300px;
+		width: 1000px;
+		display: block;
+	}
+
+	#region_selector {
+		top: 180px;
+		position: absolute;
+		margin: 0;
+		left: 20px;
+	}
+
+}
+
+@media screen and (min-width: 760px) {
+
+	#page {
+		width: 760px;
+	}
+
+	#splash_graphic {
+		right: -400px;
+		width: 1300px;
+		display: block;
+	}
+
+	#region_selector {
+		top: 230px;
+		position: absolute;
+		margin: 0;
+		left: 20px;
+	}
+
+}

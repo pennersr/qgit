@@ -1,0 +1,511 @@
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+div.qdance .pp_top,div.qdance .pp_top .pp_middle,div.qdance .pp_top .pp_left,div.qdance .pp_top .pp_right,div.qdance .pp_bottom,div.qdance .pp_bottom .pp_left,div.qdance .pp_bottom .pp_middle,div.qdance .pp_bottom .pp_right{height:13px}
+div.qdance .pp_top .pp_left{background:url(../img/prettyPhoto/qdance/sprite.png) -78px -93px no-repeat}
+div.qdance .pp_top .pp_middle{background:url(../img/prettyPhoto/qdance/sprite_x.png) top left repeat-x}
+div.qdance .pp_top .pp_right{background:url(../img/prettyPhoto/qdance/sprite.png) -112px -93px no-repeat}
+div.qdance .pp_content .ppt{color:#f8f8f8}
+div.qdance .pp_content_container .pp_left{background:url(../img/prettyPhoto/qdance/sprite_y.png) -7px 0 repeat-y;padding-left:16px}
+div.qdance .pp_content_container .pp_right{background:url(../img/prettyPhoto/qdance/sprite_y.png) top right repeat-y;padding-right:13px}
+div.qdance .pp_next:hover{background:url(../img/prettyPhoto/qdance/sprite_next.png) center right no-repeat;cursor:pointer}
+div.qdance .pp_previous:hover{background:url(../img/prettyPhoto/qdance/sprite_prev.png) center left no-repeat;cursor:pointer}
+div.qdance .pp_expand{background:url(../img/prettyPhoto/qdance/sprite.png) 0 -29px no-repeat;cursor:pointer;width:28px;height:28px}
+div.qdance .pp_expand:hover{background:url(../img/prettyPhoto/qdance/sprite.png) 0 -56px no-repeat;cursor:pointer}
+div.qdance .pp_contract{background:url(../img/prettyPhoto/qdance/sprite.png) 0 -84px no-repeat;cursor:pointer;width:28px;height:28px}
+div.qdance .pp_contract:hover{background:url(../img/prettyPhoto/qdance/sprite.png) 0 -113px no-repeat;cursor:pointer}
+div.qdance .pp_close{width:30px;height:30px;background:url(../img/prettyPhoto/qdance/icon-close.gif) 0 0 no-repeat;cursor:pointer}
+div.qdance .pp_gallery ul li a{background:url(../img/prettyPhoto/qdance/default_thumb.png) center center #f8f8f8;border:1px solid #aaa}
+div.qdance .pp_social{margin-top:7px}
+div.qdance .pp_gallery a.pp_arrow_previous,div.qdance .pp_gallery a.pp_arrow_next,div.qdance .pp_gallery a.pp_share{position:static;left:auto}
+div.qdance .pp_nav .pp_play{background:url(../img/prettyPhoto/qdance/icon-play.gif) 0 0 no-repeat;height:30px;width:30px}
+div.qdance .pp_nav .pp_pause{background:url(../img/prettyPhoto/qdance/icon-pause-variable.gif) 0 0 no-repeat;height:30px;width:30px}
+div.qdance .pp_nav .pp_share{background:url(../img/prettyPhoto/qdance/icon-share.gif) 0 0 no-repeat;height:30px;width:80px; margin: 0 0 0 10px; }
+div.qdance a.pp_arrow_previous {background:url(../img/prettyPhoto/qdance/icon-prev.gif) 0 0 no-repeat;height:30px;width:30px;margin: 0 1px 0 0; }
+div.qdance a.pp_arrow_next{background:url(../img/prettyPhoto/qdance/icon-next.gif) 0 0 no-repeat;height:30px;width:30px;margin: 0}
+div.qdance a.pp_arrow_next{left:52px; }
+div.qdance .pp_content_container .pp_details{margin-top:5px}
+div.qdance .pp_nav{clear:none;height:30px;width:222px;position:relative}
+div.qdance .pp_nav .currentTextHolder{font-family: 'Dosis', sans-serif;color:#333333;font-size:16px;left:-45px;line-height:25px;position:absolute;top:2px;margin:0;padding:0 0 0 10px}
+div.qdance .pp_close:hover,div.qdance .pp_nav .pp_play:hover,div.qdance .pp_nav .pp_pause:hover,div.qdance .pp_arrow_next:hover,div.qdance .pp_arrow_previous:hover,div.qdance .pp_share:hover, div.qdance .pp_share.active{opacity:0.7; filter: alpha(opacity=75);}
+div.qdance .pp_description{ float: left; font-family: 'Dosis', sans-serif; font-size:24px;font-weight:normal;line-height:1;margin:7px 0 2px 0 ; color: #000000; width: auto; text-transform: uppercase; }
+div.qdance .pp_bottom .pp_left{background:url(../img/prettyPhoto/qdance/sprite.png) -78px -127px no-repeat}
+div.qdance .pp_bottom .pp_middle{background:url(../img/prettyPhoto/qdance/sprite_x.png) bottom left repeat-x}
+div.qdance .pp_bottom .pp_right{background:url(../img/prettyPhoto/qdance/sprite.png) -112px -127px no-repeat}
+div.qdance .pp_loaderIcon{background:url(../img/prettyPhoto/qdance/loader.gif) center center no-repeat}
+div.pp_pic_holder a:focus{outline:none}
+div.pp_overlay{background:#000;display:none;left:0;position:absolute;top:0;width:100%;z-index:9500}
+div.pp_pic_holder{display:none;position:absolute;width:100px;z-index:10000}
+.pp_content{height:40px;min-width:40px}
+* html .pp_content{width:40px}
+.pp_content_container{position:relative;text-align:left;width:100%}
+.pp_content_container .pp_left{padding-left:20px}
+.pp_content_container .pp_right{padding-right:20px}
+.pp_content_container .pp_details{float:left;margin:10px 0 2px}
+.pp_description{display:none;margin:0}
+.pp_social{float:left;margin:0}
+.pp_social .facebook{float:left;margin-left:5px;width:55px;overflow:hidden}
+.pp_social .twitter{float:left}
+.pp_nav {clear:right;float:right ;margin:3px 0 0 0; }
+.pp_nav p{float:left;white-space:nowrap;margin:2px 4px}
+.pp_nav .pp_play,.pp_nav .pp_pause{float:left;margin-right:1px;text-indent:-10000px}
+a.pp_arrow_previous,a.pp_arrow_next{display:block;float:left;height:15px;margin-top:3px;overflow:hidden;text-indent:-10000px;width:14px}
+a.pp_share{display:block;float:left;height:15px;margin-top:0px;overflow:hidden;text-indent:-10000px;width:14px}
+.pp_hoverContainer{position:absolute;top:0;width:100%;z-index:2000}
+.pp_gallery{display:none;left:50%;margin-top:-50px;position:absolute;z-index:10000}
+.pp_gallery div{float:left;overflow:hidden;position:relative}
+.pp_gallery ul{float:left;height:35px;position:relative;white-space:nowrap;margin:0 0 0 5px;padding:0}
+.pp_gallery ul a{border:1px rgba(0,0,0,0.5) solid;display:block;float:left;height:33px;overflow:hidden}
+.pp_gallery ul a img{border:0}
+.pp_gallery li{display:block;float:left;margin:0 5px 0 0;padding:0}
+.pp_gallery li.default a{background:url(../img/prettyPhoto/facebook/default_thumbnail.gif) 0 0 no-repeat;display:block;height:33px;width:50px}
+.pp_gallery .pp_arrow_previous,.pp_gallery .pp_arrow_next,.pp_gallery .pp_share{margin-top:7px!important}
+a.pp_next{background:url(../img/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;display:block;float:right;height:100%;text-indent:-10000px;width:49%}
+a.pp_previous{background:url(../img/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;display:block;float:left;height:100%;text-indent:-10000px;width:49%}
+a.pp_expand,a.pp_contract{cursor:pointer;display:none;height:20px;position:absolute;right:30px;text-indent:-10000px;top:10px;width:20px;z-index:20000}
+a.pp_close{position:absolute;right:0;top:0;display:block;line-height:22px;text-indent:-10000px}
+.pp_loaderIcon{display:block;height:24px;left:50%;position:absolute;top:50%;width:24px;margin:-12px 0 0 -12px}
+#pp_full_res{line-height:1!important}
+#pp_full_res .pp_inline{text-align:left}
+#pp_full_res .pp_inline p{margin:0 0 15px}
+div.ppt{color:#fff;display:none;font-size:17px;z-index:9999;margin:0 0 5px 15px}
+div.qdance .pp_content,div.light_rounded .pp_content{background-color:#fff}
+div.qdance #pp_full_res .pp_inline,div.light_rounded .pp_content .ppt,div.light_rounded #pp_full_res .pp_inline,div.light_square .pp_content .ppt,div.light_square #pp_full_res .pp_inline,div.facebook .pp_content .ppt,div.facebook #pp_full_res .pp_inline{color:#000}
+div.qdance .pp_gallery ul li a:hover,div.qdance .pp_gallery ul li.selected a,.pp_gallery ul a:hover,.pp_gallery li.selected a{border-color:#fff}
+div.qdance .pp_details,div.light_rounded .pp_details,div.dark_rounded .pp_details,div.dark_square .pp_details,div.light_square .pp_details,div.facebook .pp_details{position:relative}
+.pp_top,.pp_bottom{height:20px;position:relative}
+* html .pp_top,* html .pp_bottom{padding:0 20px}
+.pp_top .pp_left,.pp_bottom .pp_left{height:20px;left:0;position:absolute;width:20px}
+.pp_top .pp_middle,.pp_bottom .pp_middle{height:20px;left:20px;position:absolute;right:20px}
+* html .pp_top .pp_middle,* html .pp_bottom .pp_middle{left:0;position:static}
+.pp_top .pp_right,.pp_bottom .pp_right{height:20px;left:auto;position:absolute;right:0;top:0;width:20px}
+.pp_fade,.pp_gallery li.default a img{display:none}
+
+/* Share Content */
+.pp_content_share {
+  background: #f8f8f8;
+  padding: 3px 0 0 3px;
+  width: 132px;
+  position: absolute;
+  z-index: 10;
+  display: none;
+  right: 21px;
+  bottom: 40px;
+}
+
+  .pp_content_share .nib {
+    width: 11px;
+    height: 6px;
+    background: url('../img/background_share_nib.png') no-repeat;
+    position: absolute;
+    bottom: -8px;
+    right: 50px;
+    z-index: 10;
+  }
+
+  .pp_content_share ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+
+    .pp_content_share ul li {
+      width: 30px;
+      height: 30px;
+      margin-right: 3px;
+      background-color: #393939;
+      float: left;
+      background-repeat: no-repeat;
+      background-position: center middle;
+    }
+
+      .pp_content_share ul li.facebook {
+        background-image: url('../img/share_facebook.png');
+      }
+
+      .pp_content_share ul li.twitter {
+        background-image: url('../img/share_twitter.png');
+      }
+
+      .pp_content_share ul li.pinterest {
+        background-image: url('../img/share_pinterest.png');
+      }
+
+      .pp_content_share ul li.tumbler {
+        background-image: url('../img/share_tumbler.png');
+      }
+	  
+	  .pp_content_share ul li.googleplus {
+        background-image: url('../img/share_googleplus.png');
+      }
+
+      .pp_content_share ul li:hover {
+        background-color: #747474;
+      }
+
+      .pp_content_share ul li:last-child {
+        margin-right: 0;
+      }
+
+      .pp_content_share ul li a {
+        text-indent: -1000px;
+        display: block;
+        width: 30px;
+        height: 30px;
+      }
+
+/* Foundation v2.1.4 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+table th { font-weight: bold; }
+table td, table th { padding: 9px 10px; text-align: left; }
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  
+  table.responsive { margin-bottom: 0; }
+  
+  .pinned { position: absolute; left: 0; top: 0; background: #fff; width: 35%; overflow: hidden; overflow-x: scroll; border-right: 1px solid #ccc; border-left: 1px solid #ccc; }
+  .pinned table { border-right: none; border-left: none; width: 100%; }
+  .pinned table th, .pinned table td { white-space: nowrap; }
+  .pinned td:last-child { border-bottom: 0; }
+  
+  div.table-wrapper { position: relative; margin-bottom: 20px; overflow: hidden; border-right: 1px solid #ccc; }
+  div.table-wrapper div.scrollable table { margin-left: 35%; }
+  div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }  
+  
+  table.responsive td, table.responsive th { position: relative; white-space: nowrap; overflow: hidden; }
+  table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td { display: none; }
+  
+}
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
+
+
+
+/*
+ * jquery.selectBoxIt.css 3.2.0
+ * Author: @gregfranko
+ */
+
+/*
+  Common CSS Properties
+  ---------------------
+  These properties will be applied to any themes that you use
+*/
+
+/* SelectBoxIt container */
+.selectboxit-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Styles that apply to all SelectBoxIt elements */
+.selectboxit-container * {
+  font: 14px Helvetica, Arial;
+  color: #d0d0d0;
+  /* Prevents text selection */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  outline: none;
+  white-space: nowrap;
+}
+
+/* Button */
+.selectboxit-container .selectboxit {
+  width: 220px; /* Width of the dropdown button */
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  /*border-radius: 6px;*/
+  overflow: hidden;
+  display: block;
+  position: relative;
+  background: url(../img/form-input-bg.gif) repeat-x;
+}
+
+/* Height and Vertical Alignment of Text */
+.selectboxit-container span, .selectboxit-container .selectboxit-options a {
+  height: 30px; /* Height of the drop down */
+  line-height: 30px; /* Vertically positions the drop down text */
+  display: block;
+}
+
+/* Focus pseudo selector */
+.selectboxit-container .selectboxit:focus {
+  outline: 0;
+}
+
+/* Disabled Mouse Interaction */
+.selectboxit-disabled {
+  cursor: default;
+}
+
+/* Button Text */
+.selectboxit-text {
+  text-indent: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: left;
+}
+
+.selectboxit .selectboxit-option-icon-container {
+  margin-left: 5px;
+}
+
+/* Options List */
+.selectboxit-container .selectboxit-options {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 100%;  /* Minimum Width of the dropdown list box options */
+  *width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+  cursor: pointer;
+  display: none;
+  z-index: 9999999999999;
+  /*border-radius: 6px;*/
+  text-align: left;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: #3d3d3d;
+}
+
+/* Individual options */
+ .selectboxit-option .selectboxit-option-anchor{
+  padding: 0 2px;
+}
+
+/* Individual Option Hover Action */
+.selectboxit-option .selectboxit-option-anchor:hover {
+  text-decoration: none;
+}
+
+/* Individual Option Optgroup Header */
+.selectboxit-option, .selectboxit-optgroup-header {
+  text-indent: 5px; /* Horizontal Positioning of the select box option text */
+  margin: 0;
+}
+
+/* The first Drop Down option */
+.selectboxit-option-first {
+  /*
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  */
+}
+
+/* The first Drop Down option optgroup */
+.selectboxit-optgroup-header + .selectboxit-option-first {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+/* The last Drop Down option */
+.selectboxit-option-last {
+	/*
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  */
+}
+
+/* Drop Down optgroup headers */
+.selectboxit-optgroup-header {
+  font-weight: bold;
+}
+
+/* Drop Down optgroup header hover psuedo class */
+.selectboxit-optgroup-header:hover {
+  cursor: default;
+}
+
+/* Drop Down down arrow container */
+.selectboxit-arrow-container {
+  /* Positions the down arrow */
+  width: 30px;
+  position: absolute;
+  right: 0;
+  background: url(../img/form-selectbox-arrow.gif) 50% center no-repeat;
+}
+
+/* Drop Down down arrow */
+.selectboxit .selectboxit-arrow-container .selectboxit-arrow {
+  /* Horizontally centers the down arrow */
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  display:none;
+}
+
+/* Drop Down down arrow for jQueryUI and jQuery Mobile */
+.selectboxit .selectboxit-arrow-container .selectboxit-arrow.ui-icon {
+  top: 30%;
+}
+
+/* Drop Down individual option icon positioning */
+.selectboxit-option-icon-container {
+  float: left;
+}
+
+.selectboxit-container .selectboxit-option-icon {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+/* Drop Down individual option icon positioning */
+.selectboxit-option-icon-url {
+  width: 18px;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  float: left;
+}
+
+/* jQueryUI and jQuery Mobile compatability fix - Feel free to remove this style if you are not using jQuery Mobile */
+.jqueryui .ui-icon {
+  background-color: inherit;
+}
+
+/* Another jQueryUI and jQuery Mobile compatability fix - Feel free to remove this style if you are not using jQuery Mobile */
+.jqueryui .ui-icon-triangle-1-s {
+  background-position: -64px -16px;
+}
+
+/*
+  Default Theme
+  -------------
+  Note: Feel free to remove all of the CSS underneath this line if you are not using the default theme
+*/
+.selectboxit-btn {
+  background-repeat: repeat-x;
+}
+
+.selectboxit-btn:hover,
+.selectboxit-btn:focus,
+.selectboxit-btn:active {
+  
+}
+
+.selectboxit-btn:hover,
+.selectboxit-btn:focus {
+ 
+}
+
+.selectboxit-default-arrow {
+  
+}
+
+.selectboxit-list {
+  
+}
+
+.selectboxit-list > li > a {
+  
+}
+
+.selectboxit-list > .selectboxit-focus > a,
+.selectboxit-list > .selectboxit-focus > a:hover,
+.selectboxit-list > .selectboxit-focus > a:focus {
+  color: #ffffff;
+  background-color: #606060;
+}
+
+.selectboxit-list > .selectboxit-disabled > a {
+  color: #999999;
+}
+
+.selectboxit-list > .selectboxit-disabled > a:hover,
+.selectboxit-list > .selectboxit-disabled > a:focus {
+  background-color: transparent;
+  background-image: none;
+}
+
+
+
